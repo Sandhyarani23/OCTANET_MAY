@@ -1,24 +1,629 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Mrs.Recipy</title>
+    <link href="assets\img\mrss.jpeg" rel="icon">
+  <link href="assets\img\mrss.jpeg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="sample.css">
     <link rel="stylesheet" href="style.css">
+    <script href="main.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="todoapp">
-            <h2 >To-Do List<img src="icon.png"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add Your Task">
-                <button onclick="addtask()"><b>ADD</b></button>
+    <div class="full">
+        <div class="navbar">
+            <div>
+                <a href="" style="color: aliceblue;"><span>Mrs.Recipy.</span></a>
+                <!--logo here-->
             </div>
-            <ul id="list-container">
-                <!--<li class="checked"></li>-->
-            </ul>
+            <nav>
+                <ul id="menu">
+                    <li><h1><b><a href='#'>Home</a></b></h1></li>
+                    <li><h1><b><a href='#'>About Us</a></b></h1></li>
+                    <li><h1><b><a href='#'>Services</a></b></h1></li>
+                    <li><h1><b><a href='#'>Contact</a></b></h1></li>
+                    <li><button>LogIn</button></li>
+                    <li><button>SignUp</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="b">
+            <div id="c"><img src="assets\img\pexels-photo-2792186.jpeg"></div>
+            <div id="d"><b><h1>"A recipe has no soul.<br> You, as the cook,<br> must bring the soul<br> to the recipe."</h1></b></div>
         </div>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+      <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p>Check Our <span>Recipy Menu</span></p>
+        </div>
+
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-starters">
+              <h4>Starters</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-breakfast">
+              <h4>Breakfast</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-lunch">
+              <h4>Lunch</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-dinner">
+              <h4>Dinner</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-starters">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Starters</h3>
+            </div>
+
+            <div class="row gy-5">
+
+              <div class="col-lg-4 menu-item" id="box">
+                <a href="assets\img\menu\file.png" class="glightbox"><img src="assets\img\menu\file.png" class="menu-imgg" alt=""></a>
+                <h4>Bone-less Chicken</h4>
+                <p class="ingredients">
+                  chicken,flour.
+                </p>
+                <p class="price">
+                  Rs.100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item" id="box">
+                <a href="assets/img/menu/burger.jpg" class="glightbox"><img src="assets/img/menu/burger.jpg" class="menu-imgg" alt=""></a>
+                <h4>Burger</h4>
+                <p class="ingredients">
+                  Bun,tomato,onion,sauses
+                </p>
+                <p class="price">
+                    Rs.100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item" id="box">
+                <a href="assets/img/menu/friedchicken.jpg" class="glightbox"><img src="assets/img/menu/friedchicken.jpg" class="menu-imgg" alt=""></a>
+                <h4>Fried Chicken</h4>
+                <p class="ingredients">
+                  chicken,flour
+                </p>
+                <p class="price">
+                    Rs.100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item" id="box">
+                <a href="assets/img/menu/kebab.jpg" class="glightbox"><img src="assets/img/menu/kebab.jpg" class="menu-imgg" alt=""></a>
+                <h4>Kebab</h4>
+                <p class="ingredients">
+                  chicken,sauses,oil
+                </p>
+                <p class="price">
+                    Rs.100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item" id="box">
+                <a href="assets/img/menu/momos (1).jpg" class="glightbox"><img src="assets/img/menu/momos (1).jpg" class="menu-imgg" alt=""></a>
+                <h4>Momos</h4>
+                <p class="ingredients">
+                 Maida,onion,soy sauce,cabbage,vinegar...
+                </p>
+                <p class="price">
+                    Rs.100
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-4 menu-item" id="box">
+                <a href="assets\img\menu\manchuria.jpg" class="glightbox"><img src="assets/img/menu/manchuria.jpg" class="menu-imgg" alt=""></a>
+                <h4>Manchuria</h4>
+                <p class="ingredients">
+                  Maida,cabbage,saices,onion...
+                </p>
+                <p class="price">
+                    Rs.100
+                </p>
+              </div><!-- Menu Item -->
+
+            </div>
+          </div><!-- End Starter Menu Content -->
+
+          <div class="tab-pane fade" id="menu-breakfast">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Breakfast</h3>
+            </div>
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets\img\menu\dosa.jpg" class="glightbox"><img src="assets\img\menu\dosa.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Dosa</h4>
+                    <p class="ingredients">
+                      flour,oil,potato,onion....
+                    </p>
+                    <p class="price">
+                      Rs.50
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/idli (2).jpg" class="glightbox"><img src="assets/img/menu/idli (2).jpg" class="menu-imgg" alt=""></a>
+                    <h4>Idli</h4>
+                    <p class="ingredients">
+                      flour,chutney...
+                    </p>
+                    <p class="price">
+                        Rs.50
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/oats.jpg" class="glightbox"><img src="assets/img/menu/oats.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Oats</h4>
+                    <p class="ingredients">
+                      chicken,flour
+                    </p>
+                    <p class="price">
+                        Rs.50
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/chapathi.jpg" class="glightbox"><img src="assets/img/menu/chapathi.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Chapathi</h4>
+                    <p class="ingredients">
+                      maida,salt,water,oil
+                    </p>
+                    <p class="price">
+                        Rs.50
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/pasta.jpg" class="glightbox"><img src="assets/img/menu/pasta.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Pastha</h4>
+                    <p class="ingredients">
+                     Flour,onion...
+                    </p>
+                    <p class="price">
+                        Rs.50
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets\img\menu\sand.jpg" class="glightbox"><img src="assets/img/menu/sand.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Sandwich</h4>
+                    <p class="ingredients">
+                      Bread,tomato,onion...
+                    </p>
+                    <p class="price">
+                        Rs.100
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                </div>
+              </div><!-- End Breakfast Menu Content -->
+
+          <div class="tab-pane fade" id="menu-lunch">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Lunch</h3>
+            </div>
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets\img\menu\chickenbiryani.jpg" class="glightbox"><img src="assets\img\menu\chickenbiryani.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Chicken Briyani</h4>
+                    <p class="ingredients">
+                      chicken,Rice,onion...
+                    </p>
+                    <p class="price">
+                      Rs.250
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/biryani.jpg" class="glightbox"><img src="assets/img/menu/biryani.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Veg Biryani</h4>
+                    <p class="ingredients">
+                      Vegetables,rice,tomato,onion..
+                    </p>
+                    <p class="price">
+                        Rs.200
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/friedrice.jpg" class="glightbox"><img src="assets/img/menu/friedrice.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Fried Rice</h4>
+                    <p class="ingredients">
+                        Vegetables,rice,tomato,onion,egg..
+                    </p>
+                    <p class="price">
+                        Rs.100
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/prawn.jpg" class="glightbox"><img src="assets/img/menu/prawn.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Prawns Curry</h4>
+                    <p class="ingredients">
+                        Prawns,onion,rice...
+                    </p>
+                    <p class="price">
+                        Rs.300
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/prawnsbir.jpg" class="glightbox"><img src="assets/img/menu/prawnsbir.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Prawns Biryani</h4>
+                    <p class="ingredients">
+                     Prawns,onion,rice...
+                    </p>
+                    <p class="price">
+                        Rs.350
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets\img\menu\paratha.jpg" class="glightbox"><img src="assets/img/menu/paratha.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Butter Naan</h4>
+                    <p class="ingredients">
+                      Maida,oil,onion...
+                    </p>
+                    <p class="price">
+                        Rs.100
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                </div>
+              </div><!-- End Lunch Menu Content -->
+
+          <div class="tab-pane fade" id="menu-dinner">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Dinner</h3>
+            </div>
+
+            <div class="row gy-5">
+
+                <div class="col-lg-4 menu-item"><div id="box">
+                    <a href="assets\img\menu\chickenbiryani.jpg" class="glightbox"><img src="assets\img\menu\chickenbiryani.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Chicken Briyani</h4>
+                    <p class="ingredients">
+                      chicken,Rice,onion...
+                    </p>
+                    <p class="price">
+                      Rs.250
+                    </p></div>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/biryani.jpg" class="glightbox"><img src="assets/img/menu/biryani.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Veg Biryani</h4>
+                    <p class="ingredients">
+                      Vegetables,rice,tomato,onion..
+                    </p>
+                    <p class="price">
+                        Rs.200
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/friedrice.jpg" class="glightbox"><img src="assets/img/menu/friedrice.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Fried Rice</h4>
+                    <p class="ingredients">
+                        Vegetables,rice,tomato,onion,egg..
+                    </p>
+                    <p class="price">
+                        Rs.100
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/prawn.jpg" class="glightbox"><img src="assets/img/menu/prawn.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Prawns Curry</h4>
+                    <p class="ingredients">
+                        Prawns,onion,rice...
+                    </p>
+                    <p class="price">
+                        Rs.300
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets/img/menu/prawnsbir.jpg" class="glightbox"><img src="assets/img/menu/prawnsbir.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Prawns Biryani</h4>
+                    <p class="ingredients">
+                     Prawns,onion,rice...
+                    </p>
+                    <p class="price">
+                        Rs.350
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                  <div class="col-lg-4 menu-item" id="box">
+                    <a href="assets\img\menu\paratha.jpg" class="glightbox"><img src="assets/img/menu/paratha.jpg" class="menu-imgg" alt=""></a>
+                    <h4>Butter Naan</h4>
+                    <p class="ingredients">
+                      Maida,oil,onion...
+                    </p>
+                    <p class="price">
+                        Rs.100
+                    </p>
+                  </div><!-- Menu Item -->
+    
+                </div>
+              </div>
+            </div>
+        </div>
+    </section><!-- End Menu Section -->
+
+   
+   
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Chefs</h2>
+          <p>Our <span>Proffesional</span> Chefs</p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets\img\chefs\pexels-cottonbro-3338672.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae beatae expedita placeat a pariatur veritatis soluta doloremque ipsum nisi, maxime non optio necessitatibus ab maiores provident laboriosam, amet cupiditate. Libero!</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets\img\chefs\pexels-cottonbro-4253315.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Patissier</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non blanditiis sit animi ipsum fugiat nostrum sapiente maxime iusto consequuntur totam, laboriosam adipisci doloribus dolor temporibus repudiandae aspernatur labore corporis explicabo!</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="chef-member">
+              <div class="member-img">
+                <img src="assets\img\chefs\pexels-ivan-samkov-8951146.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>Cook</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab id assumenda perferendis quo cumque velit corporis eligendi! Qui possimus dolorum ea, vel repudiandae eum cum obcaecati dolorem quibusdam perferendis impedit.</p>
+              </div>
+            </div>
+          </div><!-- End Chefs Member -->
+
+        </div>
+
+      </div>
+    </section><!-- End Chefs Section -->
+
+ 
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+    
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Our Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@example.com</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Opening Hours</h3>
+                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                  <strong>Sunday:</strong> Closed
+                </div>
+              </div>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <form >
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div><br>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div><br>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div><br>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <br>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form><!--End Contact Form -->
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Address</h4>
+            <p>
+              ABCDD XYZ street<br>
+              India.<br>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Reservations</h4>
+            <p>
+              <strong>Phone:</strong> +91 123456789<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 11PM<br>
+              Sunday: Closed
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+   
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
+  </body></html>
